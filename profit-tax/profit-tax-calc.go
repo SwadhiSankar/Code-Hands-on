@@ -17,8 +17,11 @@ func main(){
 	EBT := revenue-expenses
 	profit := EBT * (1-taxRate/100)
 	ratio := EBT/profit
+
+	formattedString := fmt.Sprintf("Profit :  %v\n",profit)
 	
-	fmt.Printf("Profit :  %v\n",profit)
+	// fmt.Printf("Profit :  %v\n",profit)
+	fmt.Print(formattedString)
 	fmt.Print(EBT)
 	fmt.Print(ratio)
 
